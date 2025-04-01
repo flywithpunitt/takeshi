@@ -2,6 +2,7 @@
 
 // File: src/components/Navbar.tsx
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar: React.FC = () => {
     <nav className=" bg-opacity-90 text-white py-4 px-8 fixed w-full z-50">
       <div className="flex justify-between items-center">
         <div className="text-xl font-semibold tracking-widest">
-          <a href="/">TAKSHNI</a>
+        <Link href="/">TAKSHNI</Link>
         </div>
 
         <div className="hidden md:flex space-x-8">
